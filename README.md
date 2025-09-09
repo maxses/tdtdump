@@ -1,4 +1,4 @@
-# TDTdump
+# TDTDump
 
 TDT is an CAN based protocol for simple sensor values.
 
@@ -9,12 +9,13 @@ This repository uses 'libtdt' and 'canhub' as git submodules.
 
 ![Overview](doc/canio_2.jpg)
 
-# Compile CANHub
+# Compile TDTDump
 
 ## Checkout the sources
 
 <pre style="background-color: black; color: white;">
 git clone https://github.com/maxses/tdtdump.git
+cd tdtdump
 git submodule init
 git submodule update
 </pre>
