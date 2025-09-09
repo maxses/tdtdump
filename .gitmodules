@@ -1,0 +1,7 @@
+[submodule "canhub"]
+	path = canhub
+	url = ../canhub
+
+[submodule "libtdt"]
+	path = libtdt
+	url = ../libtdt
