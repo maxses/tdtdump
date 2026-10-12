@@ -69,7 +69,7 @@ void CTdtDump::slotDataIn( const CANHub::SMessage& msg, CANHub::CConnector* sour
    sender.resize(16, ' ');
 
    qDebug() << "TDT-Message["<< sender << "]:"
-            << " ID: 0x" << std::hex << tdtMessage.getNodeId()
+            << " ID: 0x" << Qt::hex << tdtMessage.getNodeId()
             << "; Object: 0x" << (int)tdtMessage.getTdtObject()
             << "; Value: " << m_tdtPrinter.printValue( canMessage );
    dumpMessage( tdtMessage, msg, source);
