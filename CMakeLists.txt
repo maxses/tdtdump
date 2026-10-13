@@ -17,6 +17,8 @@ set( CMAKE_AUTORCC ON )
 set( CMAKE_CXX_STANDARD 11 )
 set( CMAKE_CXX_STANDARD_REQUIRED ON )
 
+enable_testing()
+
 find_package( QT NAMES Qt5 Qt6 COMPONENTS Core Xml REQUIRED )
 find_package( Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Xml )
 
@@ -46,6 +48,8 @@ target_link_libraries(
 
 
 file( CREATE_LINK tdtdump TDTDump SYMBOLIC )
+
+add_subdirectory ( tests )
 
 
 #--- Fin ---------------------------------------------------------------------
